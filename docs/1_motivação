@@ -1,0 +1,28 @@
+* Para compilar um arquivo java: 
+    javac MeuPrograma.java
+
+* Para compilar tudo em um diretório específico, por exemplo, o diretório src:
+    javac -sourcepath src
+    
+* Para colocar as bibliotecas no classpath
+    javac -cp lib/biblioteca.jar -sourcepath src
+     -- lib é o diretório que está a biblioteca
+     -- src é o diretório do sourcepath
+     
+* Customizar o diretório de saída
+     javac -d target/classes -co lib/biblioteca.jar -sourcepath src
+      -- -d target/classes é onde seram colocadas as classes compiladas
+      -- -co compilar com o classpath lib/biblioteca.jar
+      -- -sourcepath compilar o sourcepath src 
+    
+* Compilar as classes de teste
+     javac -d target/test-classes -cp lib/biblioteca.jar:terget/classes - sourcepath test
+      -- -d target/classes é onde seram colocadas as classes de teste
+      -- -cp compilar com o classpath lib/biblioteca.jar
+        -- :terget/classes precisamos também colocar o código-fonte que será testado
+      -- -sourcepath compilar o sourcepath test, que é onde estão as classes de teste
+      
+Além de todos estes comandos, é necessário que criamos todos os diretórios e scripts para fazer todo
+este processo precisam ser criados também para não haver erro nestes comandos e para controlar o 
+build do projeto são diversos comandos, por exemplo, temos comando para compilar, gerar relatório,
+gerar um arquivo jar, gerar um arquivo war, realizar teste de cobertura,...

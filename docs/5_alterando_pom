@@ -1,0 +1,18 @@
+* Para adicionar dependências no projeto é necessário:
+    - abrir o arquivo pom.xml
+    - adicionar uma nova tag <dependency> dentro das tags <dependencies>
+    - ex: adicionar a dependência do xstream (biblioteca Java para serializar e deserializar XML, JSON,...)
+        <dependency>
+        	<groupId>com.thoughtworks.xstream</groupId>
+        	<artifactId>xstream</artifactId>
+        	<version>1.3.1</version>
+        </dependency>
+    OBS.: A dependência do JUnit ainda possui a tag <scope> que diz que só será utilizado em testes.
+    		Como o xstream será utilizada normalmente, não é necessário o uso da tag <scope>
+    		
+    - Após a inclusão da dependência do xstream é necessário executar no terminal o comando 
+        "mvn eclipse:eclipse" que vai baixar o xstream e gerar a configuração do eclipse.
+    - Volta para o eclipse é faz um refresh no projeto para exibir as novas dependências.
+        - Como o "xstream" depende do "xpp3", o Maven já baixa está biblioteca também.
+        
+OBS.: O Maven além de gerenciar o build, gerencia também as dependências do projeto.

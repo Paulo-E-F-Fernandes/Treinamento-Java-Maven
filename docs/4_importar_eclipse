@@ -1,0 +1,12 @@
+* Para importar o projeto para o eclipse é preciso:
+	- NO TERMINAL
+        - executar o comando "mvn eclipse:eclipse" para gerar a configuração do eclipse
+    - NO ECLIPSE
+        - ir em "File > Import"
+        - procurar por "Existing Projects into Workspace" 
+        - escolher o direrório do projeto
+        - caso o eclipse não encontre o diretório M2_REPO
+            - ir em "Windows > Preferences" e procurar por "Classpath Variables" e adiciona
+               uma nova variável chamada "M2_REPO" e no path colocar o caminho para o diretório
+               ".m2/repository"
+            - recompilar os projetos

@@ -1,0 +1,30 @@
+NO TERMINAL
+
+* Criar um projeto novo no Maven baseado em um padrão:
+    mvn archetype:generate -DgroupId=br.com.treinamento.maven -DartifactId=produtos 
+    	-DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-quickstart
+ Onde:
+	archetype:generate -> o Maven vai gerar um projeto baseado no archetype
+	-DgroupId -> pacote base do projeto
+	-DartifactId -> nome do projeto
+	-DinteractiveMode -> é false para que o Maven não fique perguntando coisas
+	-DarchetypeArtifactId -> indica o archetype de exemplo que quero utilizar
+	    - O maven-archetype-quickstart cria como exemplo as classes App.java e AppTest.java, sendo
+	        que o AppTest usa para os testes o JUnit 3 e normalmente é utilizado o JUnit4 e está 
+	        atualização é feita atualizando as dependências.  
+
+* Para compilar o projeto:
+	Entrar no diretório que possui o pom do projeto e executar o comando "mvn compile"	
+	
+* Para compilar e rodar os teste
+	mvn test
+	
+* Para gerar o artefato do projeto (.jar ou .war, por exemplo)
+	mvn package
+	
+* No java, para executar uma classe dentro do .jar
+	java -cp target/produtos-1.0-SNAPSHOT.jar br.com.treinamento.maven.App
+		-cp -> classpath
+		target -> é o diretório gerado pelo Maven e onde estaram os jars
+		App -> é a classe de exemplo criado pelo Maven
+		
