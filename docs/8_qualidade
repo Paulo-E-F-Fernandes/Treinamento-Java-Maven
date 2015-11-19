@@ -1,0 +1,10 @@
+* Podemos gerar vários relatório com os comandos abaixo:
+    - mvn surefire-report:report
+    - mvn pmd:pmd
+    - mvn verify (no final de todas as fases)
+    
+  - Com esses relatórios podemos verificar a qualidade do código para só fazer o deploy quando
+    a qualidade estiver boa o suficiente para o projeto.
+    
+  - OBS.: No site do maven podemos conhecer os mais diversos plugins.
+    

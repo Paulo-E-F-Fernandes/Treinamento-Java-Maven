@@ -1,0 +1,18 @@
+* Para o maven executar sem procurar atualizações dos plugin ou dependências na internet
+    mvn -o test
+	    -o (offline), esse comando realiza a tarefa sem procurar na internet por atualizações 
+	        dos plugins ou dependências.
+	        
+* Para rodar os teste e depois gerar um relatório dos testes
+    mvn surefire-report:report
+        - após rodar os testes, o maven gerar um relatório HTML que fica no diretório 
+            "target/site/surefire-report.html"
+            
+* Gerar um relatório com problemas e erros que podem ter no projeto. 
+    mvn pmd:pmd
+        - o pmd pode ser configurado e no site pmd.sourceforge.net podemos ver as regras que podemos
+              utilizar em nossos projetos.
+              
+* A verificação da cobertura não é executado no "mvn package". É necessário executar o comando 
+    "mvn verify" para a execução do jacoco-maven-plugin:check.
+    - OBS.: O mvn verify só deve ser executado após o mvn package

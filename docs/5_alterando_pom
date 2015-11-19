@@ -15,4 +15,4 @@
     - Volta para o eclipse é faz um refresh no projeto para exibir as novas dependências.
         - Como o "xstream" depende do "xpp3", o Maven já baixa está biblioteca também.
         
-OBS.: O Maven além de gerenciar o build, gerencia também as dependências do projeto.
+OBS.: O Maven além de gerenciar o build, gerencia também as dependências do projeto

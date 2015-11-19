@@ -26,3 +26,18 @@ Além de todos estes comandos, é necessário que criamos todos os diretórios e
 este processo precisam ser criados também para não haver erro nestes comandos e para controlar o 
 build do projeto são diversos comandos, por exemplo, temos comando para compilar, gerar relatório,
 gerar um arquivo jar, gerar um arquivo war, realizar teste de cobertura,...
+
+O Maven facilitá o gerenciamento do ciclo de build e do gerenciamento de dependência do nosso projeto.
+Os diretórios são definidos com padrões, seguindo as convenções, por exemplo, src/main/java, 
+src/test/java, pom.xml, o diretório target, ...
+
+Para fugirmos das convenções necessitamos configurar isso no pom.xml.
+
+O groupId e o artifactId são muito importantes. O groupId identifica qual é o grupo ou empresa do 
+projeto, por exemplo, o groupId do hibernate é org.hibernate. O artifactId identifica o nome do 
+projeto, por exemplo, hibernate-core.
+
+No site mvnrepository.com, podemos encontrar as informações necessárias das bibliotecas que queremos
+usar, sendo que na própria documentação da biblioteca já fala quais são os groupId, artifactId e 
+versão para adicionarmos no maven.
+adicionar
