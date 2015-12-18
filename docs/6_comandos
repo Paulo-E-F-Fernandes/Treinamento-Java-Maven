@@ -16,3 +16,12 @@
 * A verificação da cobertura não é executado no "mvn package". É necessário executar o comando 
     "mvn verify" para a execução do jacoco-maven-plugin:check.
     - OBS.: O mvn verify só deve ser executado após o mvn package
+    
+* Para ver a árvore de dependência do nosso projeto executamos o comando:
+	mvn dependency:tree
+	
+* O install executa a fase de "verify" e coloca o .jar gerado no repositório local.  
+	mvn install
+	
+* Para gerar o .jar ou o .war
+	mvn package
