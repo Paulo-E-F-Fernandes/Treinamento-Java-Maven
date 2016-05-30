@@ -8,4 +8,4 @@
 	    - No windows é nas variáveis de ambiente
 	    - No linux é necessário editar o bash_profile, exemplo, nano ~/.bash_profile
 	        - No bash_profile, adicionar a entrada abaixo:
-	            -"export PATH=PATH:[O caminho do diretório do bin do Maven]"
+	            - "export PATH=[O caminho do diretório do bin do Maven]:$PATH", (sem as aspas)
