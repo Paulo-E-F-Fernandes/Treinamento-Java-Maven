@@ -1,5 +1,6 @@
 * Download do Maven:
     - https://maven.apache.org/
+    - Fazer o download Binary Archive
     - Descompactar o Maven no diretório do projeto
         - Dentro do diretório do Maven, (/apache-maven-x.x.x/), tem o diretório bin e dentro deste 
         	tem o mvn, que é o executavél do Maven
