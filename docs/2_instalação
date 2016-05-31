@@ -6,6 +6,6 @@
         	tem o mvn, que é o executavél do Maven
 	- Para colocar o Maven no path do sistema operacional:
 	    - No windows é nas variáveis de ambiente
-	    - No linux é necessário editar o bash_profile, exemplo, nano ~/.bash_profile
-	        - No bash_profile, adicionar a entrada abaixo:
+	    - No linux é necessário editar o bash_profile, exemplo, nano ~/.profile
+	        - No profile, adicionar a entrada abaixo:
 	            - "export PATH=[O caminho do diretório do bin do Maven]:$PATH", (sem as aspas)
